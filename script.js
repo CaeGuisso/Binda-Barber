@@ -4,7 +4,7 @@
 const CONFIG = {
   // WhatsApp: só números, com código do país e DDD. Ex.: "5519999999999"
   // Enquanto estiver vazio, os botões rolam até a seção de contato.
-  whatsappNumber: "",
+  whatsappNumber: "5519993197761",
   whatsappMessage: "Olá! Vim pelo site da Binda Barber.",
 
   instagram: "bindabarber_b.b",
