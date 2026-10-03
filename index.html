@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Binda Barber | Barbearia</title>
+  <meta name="description" content="Binda Barber - Cortes, barba e estilo. Atendimento por ordem de chegada em Santa Maria.">
+  <meta name="theme-color" content="#080808">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Binda Barber | Barbearia">
+  <meta property="og:description" content="Cortes, barba e estilo. Atendimento por ordem de chegada em Santa Maria.">
+  <!-- Ao publicar, troque pela URL completa: https://seudominio.com.br/images/logo-post.jpg -->
+  <meta property="og:image" content="images/logo-post.jpg">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="nav" id="nav" aria-label="Principal">
+  <a class="logo" href="#inicio" aria-label="Binda Barber - início">BINDA <span>BARBER</span></a>
+  <div class="links" id="menu">
+    <a href="#inicio">Início</a>
+    <a href="#sobre">Sobre</a>
+    <a href="#servicos">Serviços</a>
+    <a href="#galeria">Galeria</a>
+    <a href="#horarios">Horários</a>
+    <a href="#localizacao">Localização</a>
+    <a href="#contato">Contato</a>
+  </div>
+  <a href="#" class="btn small js-wa nav__wa">Falar no WhatsApp</a>
+  <button class="burger" id="burger" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu"><span></span><span></span></button>
+</nav>
+
+<main>
+<header class="hero" id="inicio">
+  <div class="hero-copy">
+    <p class="eyebrow">✂️ ATENDIMENTO POR ORDEM DE CHEGADA</p>
+    <p class="hero-brand">BINDA BARBER</p>
+    <h1>SEU ESTILO.<br><b>COMEÇA AQUI.</b></h1>
+    <p class="lead">Cortes, barba e aquele visual que combina com você.</p>
+    <div class="actions">
+      <a class="btn" href="#servicos">CONHECER SERVIÇOS</a>
+      <a class="btn ghost js-wa" href="#">FALAR NO WHATSAPP</a>
+    </div>
+    <p class="addr">Rua Alexandre Cunali, 2070 - Santa Maria</p>
+    <p class="status" id="status" aria-live="polite"></p>
+  </div>
+      
+    <section id="localizacao">
+      <div class="section-title reveal"><p class="eyebrow">LOCALIZAÇÃO</p><h2>Onde estamos</h2></div>
+      <p class="addr-big reveal">Rua Alexandre Cunali, 2070 - Santa Maria</p>
+      <div class="map reveal">
+        <iframe id="map" title="Mapa: Binda Barber, Rua Alexandre Cunali, 2070" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+      </div>
+      <a id="mapLink" class="btn ghost map__btn" target="_blank" rel="noopener">ABRIR NO GOOGLE MAPS</a>
+    </section>
+</header>
+
+<section id="sobre" class="feature">
+  <div class="reveal">
+    <p class="eyebrow">SOBRE</p>
+    <h2>Sobre a Binda Barber</h2>
+    <p>Na Binda Barber, cada corte é pensado para deixar você sair daqui com o visual renovado. Um espaço feito para quem valoriza estilo, cuidado e um bom atendimento.</p>
+    <ul class="chips">
+      <li><span aria-hidden="true">✂️</span> Cortes modernos</li>
+      <li><span aria-hidden="true">🧔</span> Barba</li>
+      <li><span aria-hidden="true">💈</span> Ambiente confortável</li>
+      <li><span aria-hidden="true">🔥</span> Atendimento por ordem de chegada</li>
+    </ul>
+  </div>
+  <div class="feature-photo reveal">
+    <img src="images/emblema.jpg" alt="Emblema BB da Binda Barber com coroa" loading="lazy" width="600" height="600">
+  </div>
+</section>
+
+<section id="servicos">
+  <div class="section-title reveal"><p class="eyebrow">SERVIÇOS</p><h2>Escolha seu próximo visual.</h2></div>
+  <div class="cards" id="services"></div>
+  <p class="note reveal">✂️ <strong>Sem agendamento:</strong> chegue, entre na fila e aguarde seu atendimento.</p>
+</section>
+
+<section id="galeria">
+  <div class="section-title reveal"><p class="eyebrow">GALERIA</p><h2>Nosso trabalho</h2></div>
+  <div class="gallery" id="gallery"></div>
+</section>
+
+<section id="horarios" class="hours">
+  <div class="reveal">
+    <p class="eyebrow">HORÁRIOS</p>
+    <h2>Horário de atendimento</h2>
+    <ul class="days" id="hours"></ul>
+  </div>
+  <aside class="feature-box reveal">
+    <span aria-hidden="true">⚠️</span>
+    <h3>Atendimento por ordem de chegada</h3>
+    <p>Não trabalhamos com agendamento. É só chegar na Binda Barber durante o horário de atendimento.</p>
+    <p class="status" id="status2" aria-live="polite"></p>
+  </aside>
+</section>
+<section id="contato" class="contact">
+  <div class="feature-box contact__box reveal">
+    <p class="eyebrow">CONTATO</p>
+    <h2>Ficou com alguma dúvida?</h2>
+    <p>Fale com a Binda Barber pelo WhatsApp.</p>
+    <a href="#" class="btn big js-wa">💬 FALAR NO WHATSAPP</a>
+    <a id="igLink" class="ig" target="_blank" rel="noopener">Instagram @bindabarber_b.b</a>
+  </div>
+</section>
+</main>
+
+<footer>
+  <nav aria-label="Rodapé">
+    <a href="#inicio">Início</a>
+    <a href="#servicos">Serviços</a>
+    <a href="#galeria">Galeria</a>
+    <a href="#horarios">Horários</a>
+    <a href="#localizacao">Localização</a>
+    <a href="#" class="js-wa">WhatsApp</a>
+  </nav>
+  <p class="copy">© 2026 Binda Barber. Todos os direitos reservados.</p>
+</footer>
+
+<a href="#" class="fab js-wa" aria-label="Falar no WhatsApp">
+  <svg viewBox="0 0 24 24" width="30" height="30" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.600 15.100L2 22l5-1.300A10 10 0 1 0 12 2zm4.800 13.700c-.2.600-1.200 1.200-1.700 1.200-.4.100-1 .1-1.600-.1-.4-.1-.9-.3-1.500-.6-2.600-1.100-4.300-3.700-4.400-3.900-.1-.2-1-1.300-1-2.500s.6-1.800.9-2c.2-.2.500-.3.700-.3h.5c.2 0 .4 0 .6.500l.8 1.900c.1.200.1.400 0 .5l-.3.500-.4.400c-.1.200-.3.300-.1.600.2.300.7 1.100 1.500 1.800 1 .9 1.800 1.200 2.100 1.300.3.100.4.100.6-.1l.8-1c.2-.3.400-.2.600-.1l1.800.9c.3.100.5.200.5.300.1.200.1.800-.1 1.400z"/></svg>
+</a>
+
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Foto ampliada" hidden>
+  <button class="lb__x" id="lbX" aria-label="Fechar">×</button>
+  <button class="lb__n lb__n--p" id="lbP" aria-label="Anterior">‹</button>
+  <img id="lbImg" alt="">
+  <button class="lb__n lb__n--n" id="lbN" aria-label="Próxima">›</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
